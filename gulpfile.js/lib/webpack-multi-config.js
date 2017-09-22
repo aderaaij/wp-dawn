@@ -5,7 +5,6 @@ const webpack = require('webpack');
 const webpackManifest = require('./webpackManifest');
 
 const webpackExports = (env) => {
-    const filenamePattern = env === 'production' ? '[name]-[hash].js' : '[name].js';
 
     const webpackConfig = {
         cache: false,
@@ -13,7 +12,7 @@ const webpackExports = (env) => {
         output: {
             path: path.resolve(__dirname, '../../app/build/assets/js/'),
             publicPath: '/js/',
-            filename: filenamePattern,
+            filename: '[name].js',
         },
         module: {
             loaders: [

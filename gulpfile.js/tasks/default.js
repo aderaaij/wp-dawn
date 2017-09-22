@@ -9,7 +9,6 @@ const defaultTask = (cb) => {
             'svg:sprite',
         ],
         [
-            'scripts:standalone',
             'styles',
         ],
         'watch',

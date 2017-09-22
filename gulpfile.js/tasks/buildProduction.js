@@ -7,14 +7,11 @@ const buildProduction = (cb) => {
         [
             'images',
             'svg:sprite',
-            'scripts:standalone',
         ],
         [
             'styles:production',
             'webpack:production',
-            'templates',
         ],
-        'rev',
         cb,
     );
 };

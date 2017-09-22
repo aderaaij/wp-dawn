@@ -1,9 +1,29 @@
+# Package managers #
+######################
 /node_modules
 /bower_components
-/app/build
-.sass-cache
-.DS_Store
+/vendor
 npm-debug.log
-Desktop.ini
+
+# WordPress #
+######################
+/app/www/wp
+/app/www/local-config.php
+/app/www/production-config.php
+
+
+# Sensitive #
+######################
 .ftppass.json
-yarn.lock
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
