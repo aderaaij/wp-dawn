@@ -11,4 +11,11 @@ This package will automatically install WordPress in a subdirectory and start a 
 * Create a database
 * Create `local-config.php` in `app/www/` with database credentials
 * Create a virtual host pointing at `app/www/`
-* Go to hostname (default is `loc.wp-dawn.com`)
+* Go to hostname and run the WP Installer
+* Run `gulp`
+* Start theming
+
+To rename the theme you'll need to edit the following files/folders
+* `gulpfile.js/config/index`, `themename`
+* `app/www/content/themes/themefolder`
+* `app/www/content/themes/screen.css`
