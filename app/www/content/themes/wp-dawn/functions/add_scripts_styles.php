@@ -4,8 +4,12 @@
 // =========================================================================
 function autoversion($url) {
     $path = pathinfo($url);
-    $ver = filemtime(get_theme_file_path().$url);
-    return $ver;
+    $test = file_exists(get_theme_file_path().$url);
+    if($test) {
+        $ver = filemtime(get_theme_file_path().$url);
+        return $ver;
+    }
+    return '';
 }
 
 // =========================================================================
