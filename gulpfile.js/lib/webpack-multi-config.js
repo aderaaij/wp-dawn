@@ -2,7 +2,6 @@ const config = require('../config/scripts');
 const root = require('../config/index');
 const path = require('path');
 const webpack = require('webpack');
-const webpackManifest = require('./webpackManifest');
 
 const webpackExports = (env) => {
     const webpackConfig = {
