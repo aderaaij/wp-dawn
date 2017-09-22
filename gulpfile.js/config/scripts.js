@@ -2,15 +2,17 @@ const config = require('./');
 
 module.exports = {
     source: [
-        `${config.assetsPath}js/vendor/*.js`,
-        `${config.assetsPath}js/partials/*.js`,
-        `${config.assetsPath}js/*.js`,
+        `${config.sourceAssets}js/vendor/*.js`,
+        `${config.sourceAssets}js/partials/*.js`,
+        `${config.sourceAssets}js/*.js`,
     ],
-    entries: {
-        script: [`${config.assetsPath}js/script.js`],
+    entry: {
+        // You can add multiple entries and include a destiotion path in the key
+        // https://stackoverflow.com/a/45278943/4474075
+        script: `${config.sourceAssets}js/script.js`,
     },
-    dest: `${config.buildPath}assets/js`,
-    base: `${config.assetsPath}assets/js`,
+    base: `${config.sourceAssets}js`,
+    dest: `${config.themeAssets}js`,
     extractSharedJs: true,
     concat: 'scripts.js',
     rename: {

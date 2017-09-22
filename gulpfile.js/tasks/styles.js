@@ -5,7 +5,7 @@ const config = require('../config/styles');
 const errorHandler = require('../lib/errorHandler');
 
 const stylesDefault = () => gulp.src(config.source)
-
+    
     .pipe(plugins.sourcemaps.init())
 
     .pipe(plugins.sass(config.settings))

@@ -8,7 +8,8 @@
     "require": {
         "php": ">=5.4",
         "composer/installers": "1.*",
-        "johnpbloch/wordpress": "4.*"
+        "johnpbloch/wordpress": "4.*",
+        "vlucas/phpdotenv": "2.*"
     },
     "extra": {
         "wordpress-install-dir": "app/www/wp",

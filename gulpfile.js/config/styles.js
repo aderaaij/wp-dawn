@@ -2,9 +2,9 @@ const config = require('./');
 
 module.exports = {
     autoprefixer: { browsers: ['last 2 versions'] },
-    source: `${config.assetsPath}sass/screen.scss`,
-    dest: `${config.buildPath}assets/css/`,
-    base: `${config.assetsPath}sass/**/*`,
+    source: `${config.sourceAssets}sass/screen.scss`,
+    dest: `${config.themeAssets}css/`,
+    base: `${config.sourceAssets}sass/**/*`,
     settings: {
         outputStyle: 'nested',
         includePaths: [

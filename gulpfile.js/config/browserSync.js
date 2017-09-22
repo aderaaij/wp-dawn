@@ -1,8 +1,6 @@
 const config = require('./');
 
 module.exports = {
-    server: {
-        baseDir: config.buildPath,
-    },
+    proxy: `http://${config.appUrl}`,
     open: false,
 };
