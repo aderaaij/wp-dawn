@@ -20,7 +20,13 @@ const webpackExports = (env) => {
                     query: {
                         // https://github.com/babel/babel-loader#options
                         cacheDirectory: true,
-                        presets: ['es2015', 'stage-2'],
+                        presets: [
+                            ['env', {
+                                targets: {
+                                    browsers: ['last 2 versions'],
+                                },
+                            }],
+                        ],
                     },
                     exclude: /(node_modules|bower_components)/,
                 },
