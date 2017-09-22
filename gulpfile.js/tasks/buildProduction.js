@@ -4,6 +4,7 @@ const plugins = require('gulp-load-plugins')();
 const buildProduction = (cb) => {
     plugins.sequence(
         'clean',
+        'composer',
         [
             'images',
             'svg:sprite',
