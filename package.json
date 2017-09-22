@@ -51,6 +51,7 @@
     "webpack": "^3.*"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.0"
+    "babel-preset-env": "^1.6.0",
+    "gulp-composer": "^0.4.2"
   }
 }
