@@ -1,23 +1,22 @@
 {
-  "name": "totallystatical",
-  "version": "2.3.2",
-  "description": "A static site generator based on Gulp",
+  "name": "wpdawn",
+  "version": "1.0",
+  "description": "A WordPress setup repo for easy theme development",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aderaaij/totallystatical"
+    "url": "https://github.com/aderaaij/wp-dawn"
   },
   "keywords": [
     "gulp",
-    "static",
-    "site",
-    "generator"
+    "WordPress",
+    "starter theme"
   ],
   "author": "Arden de Raaij <mail@arden.nl>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aderaaij/totallystatical/issues"
+    "url": "https://github.com/aderaaij/wp-dawn/issues/"
   },
-  "homepage": "https://github.com/aderaaij/totallystatical",
+  "homepage": "https://github.com/aderaaij/wp-dawn",
   "devDependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^7.1.1",
