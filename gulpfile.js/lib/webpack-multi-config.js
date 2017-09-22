@@ -54,7 +54,6 @@ const webpackExports = (env) => {
                 },
                 output: {
                     comments: false,
-                    ascii_only: true,
                 },
             }),
             new webpack.NoEmitOnErrorsPlugin(),
