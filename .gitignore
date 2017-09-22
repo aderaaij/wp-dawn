@@ -10,6 +10,7 @@ npm-debug.log
 /app/www/wp
 /app/www/local-config.php
 /app/www/production-config.php
+/app/www/.htaccess
 
 # Sensitive #
 ######################
